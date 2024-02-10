@@ -121,7 +121,7 @@ header{
     border: none;
     transition: 0.2cvs ease-in;
     z-index: 1;
-    width: 300px;
+    width: 200px;
     padding: 10px 20px;
     border-radius: 10px;
     display: flex;
