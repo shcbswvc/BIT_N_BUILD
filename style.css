@@ -214,7 +214,7 @@ nav{
     align-items: center;
     opacity: 0;
     transition: opacity 0.25s;
-     
+    border-radius: none; 
     outline: none; 
 } 
 .overlay--blur{
@@ -411,7 +411,7 @@ span.message_author {
     color: var(--theme);
     margin-left: 20px;
 }
-/* FOOTER */
+
 .footer {
 	width: 100%;
 	background: #00121b;
