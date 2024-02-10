@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 userName.textContent = userData.username;
                 userName1.textContent = userData.username;
                 attendance.textContent=userData.attendance;
+                Comment
             });
         } else {
         }
