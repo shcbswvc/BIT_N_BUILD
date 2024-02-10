@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>CAMPUS CLUB HUB</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
-<body>
-  <div id="preloader">
-    <img src="./assets/Ghost.gif" alt="loading">
-  </div>
+  <body>
+    <div id="preloader">
+      <img src="./assets/Ghost.gif" alt="loading" />
+    </div>
     <nav>
       <div class="navbar">
         <div class="logoMain">
@@ -19,12 +19,16 @@
           </a>
         </div>
         <div class="webname">
-          <img src="./assets/campus.png" id="campus" alt="campus">
-          <img src="./assets/club.png" id="club" alt="club">
-          <img src="./assets/hub.png" id="hub" alt="hub">
+          <img src="./assets/campus.png" id="campus" alt="campus" />
+          <img src="./assets/club.png" id="club" alt="club" />
+          <img src="./assets/hub.png" id="hub" alt="hub" />
         </div>
+        
+  
         <div id="login">
-          <a href="./login.html" id="trial"><button id="back">Log In</button></a>
+          <a href="./login.html" id="trial"
+            ><button id="back">Log In</button></a
+          >
           <button id="logout">Log out</button>
         </div>
       </div>
@@ -32,15 +36,8 @@
     <section class="container">
       <div class="slider-wrapper">
         <div class="slider">
-          <img
-            id="slide1"
-            src="./assets/club image.jpg" alt="ieee image" 
-          />
-          <img
-            id="slide2"
-            src="./assets/clubimage2.jpg"
-            alt="tatva image"
-          />
+          <img id="slide1" src="./assets/club image.jpg" alt="ieee image" />
+          <img id="slide2" src="./assets/clubimage2.jpg" alt="tatva image" />
           <img id="slide3" src="./assets/clubimage3.jpg" alt="praveg image" />
         </div>
         <div class="slidernav">
@@ -51,288 +48,370 @@
       </div>
     </section>
 
-  <main>
-    <div class="titlecard" id="titlecard">
-      <a class="title" href=""> <h1 id="title">ADHAMYA</h1> </a>
-    </div>
-    <div id="announcements">
-      <img src="./assets/announcements.png" alt="announcements">
-    </div>
-    <div id="myNav" class="overlay1">
-      <div class="overlay-content1">
-        <div class="message_box">
-          <div class="message_box_label">
-              Announcements
-          </div>
-          <div class="message_list_container">
-              <ul class="message_list" id="announcementsList">
-                
-              </ul>
-          </div>
-  
+    <main>
+      <div class="titlecard" id="titlecard">
+        <a class="title" href=""> <h1 id="title">ADHAMYA</h1> </a>
       </div>
+     
+      
+      <div id="announcements">
+        <img src="./assets/announcements.png" alt="announcements" />
       </div>
-    </div>
-    <div class="row1">
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="chethana.html">
-              <img id="img" src="./assets/chetana.jpg" alt="chetana club logo" />
-              <div class="overlay overlay--blur">Chetana</div>
-            </a>
+      <div id="myNav" class="overlay1">
+        <div class="overlay-content1">
+          <div class="message_box">
+            <div class="message_box_label">Announcements</div>
+            <div class="message_list_container">
+              <ul class="message_list" id="announcementsList"></ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="esports.html">
-              <img id="img" src="./assets/esports.jpg" alt="esports club logo" />
-              <div class="overlay overlay--blur">E-Sports</div>
-            </a>
+      <div id="calender">
+        <button id="popup-calender"><img
+          id="calender img"
+          src="./assets/calender.png"
+          alt="calender logo"
+        /></button>
+        <div id="overlay"></div>
+        <div id="popup">
+          <iframe
+            id="popup-iframe"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKolkata&bgcolor=%23e29c9c&showTitle=0&showPrint=0&src=Y2FtcHVzY2x1Ymh1YkBnbWFpbC5jb20&src=ZTQyNDk2NWZiY2YxZDRiOGRmNWZhMjVhMDQyNmU2ZGJiMTY5NTIxMDExYzE0MGRlM2U3ZmNmOTExZWNmM2IyY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23F09300"
+            style="border-width: 0"
+            width="890"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="chethana.html">
+                <img
+                  id="img"
+                  src="./assets/chetana.jpg"
+                  alt="chetana club logo"
+                />
+                <div class="overlay overlay--blur">Chetana</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="esports.html">
+                <img
+                  id="img"
+                  src="./assets/esports.jpg"
+                  alt="esports club logo"
+                />
+                <div class="overlay overlay--blur">E-Sports</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="eunoia.html">
+                <img
+                  id="img"
+                  src="./assets/Eunoia.jpg"
+                  alt="Eunoia club logo"
+                />
+                <div class="overlay overlay--blur">Eunoia</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="G2C2.html">
+                <img id="img" src="./assets/g2c2.jpg" alt="g2c2 club logo" />
+                <div class="overlay overlay--blur">G2C2</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="eunoia.html">
-              <img id="img" src="./assets/Eunoia.jpg" alt="Eunoia club logo" />
-              <div class="overlay overlay--blur">Eunoia</div>
-            </a>
+      <div class="row1">
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="kuthuhala.html">
+                <img
+                  id="img"
+                  src="./assets/kutuhala.jpg"
+                  alt="kutuhala club logo"
+                />
+                <div class="overlay overlay--blur">Kutuhala</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="momento.html">
+                <img
+                  id="img"
+                  src="./assets/momento.jpg"
+                  alt="momento club logo"
+                />
+                <div class="overlay overlay--blur">Momento</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="paradox.html">
+                <img
+                  id="img"
+                  src="./assets/paradox.jpg"
+                  alt="paradox club logo"
+                />
+                <div class="overlay overlay--blur">Paradox</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="prathibimba.html">
+                <img
+                  id="img"
+                  src="./assets/prathibimba.jpg"
+                  alt="prathibimba club logo"
+                />
+                <div class="overlay overlay--blur">Prathibimba</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="G2C2.html">
-              <img id="img" src="./assets/g2c2.jpg" alt="g2c2 club logo" />
-              <div class="overlay overlay--blur">G2C2</div>
-            </a>
+      <div class="row2">
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="tatva.html">
+                <img id="img" src="./assets/tatva.jpg" alt="tatva club logo" />
+                <div class="overlay overlay--blur">Tatva</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="vachana.html">
+                <img
+                  id="img"
+                  src="./assets/Vachana.jpg"
+                  alt="Vachana club logo"
+                />
+                <div class="overlay overlay--blur">Vachana</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="vinimaya.html">
+                <img
+                  id="img"
+                  src="./assets/vinimaya.jpg"
+                  alt="vinimaya club logo"
+                />
+                <div class="overlay overlay--blur">Vinimaya</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row1">
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="kuthuhala.html">
-              <img id="img" src="./assets/kutuhala.jpg" alt="kutuhala club logo" />
-              <div class="overlay overlay--blur">Kutuhala</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="momento.html">
-              <img id="img" src="./assets/momento.jpg" alt="momento club logo" />
-              <div class="overlay overlay--blur">Momento</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="paradox.html">
-              <img id="img" src="./assets/paradox.jpg" alt="paradox club logo" />
-              <div class="overlay overlay--blur">Paradox</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="prathibimba.html">
-              <img id="img" src="./assets/prathibimba.jpg" alt="prathibimba club logo"/>
-              <div class="overlay overlay--blur">Prathibimba</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row2">
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="tatva.html">
-              <img id="img" src="./assets/tatva.jpg" alt="tatva club logo" />
-              <div class="overlay overlay--blur">Tatva</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="vachana.html">
-              <img id="img" src="./assets/Vachana.jpg" alt="Vachana club logo" />
-              <div class="overlay overlay--blur">Vachana</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="vinimaya.html">
-              <img id="img" src="./assets/vinimaya.jpg" alt="vinimaya club logo" />
-              <div class="overlay overlay--blur">Vinimaya</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="titlecard">
-      <a class="title" href=""><h1 id="title">TECHNICAL</h1></a>
-    </div>
-    <div class="row1">
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="ecell.html">
-              <img id="img" src="./assets/ecell.jpg" alt="ecell club logo" />
-              <div class="overlay overlay--blur">E-Cell</div>
-            </a>
+      <div class="titlecard">
+        <a class="title" href=""><h1 id="title">TECHNICAL</h1></a>
+      </div>
+      <div class="row1">
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="ecell.html">
+                <img id="img" src="./assets/ecell.jpg" alt="ecell club logo" />
+                <div class="overlay overlay--blur">E-Cell</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="gdsc.html">
+                <img id="img" src="./assets/gdsc.jpg" alt="gdsc club logo" />
+                <div class="overlay overlay--blur">GDSC</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="ieee.html">
+                <img id="img" src="./assets/ieee.jpg" alt="ieee club logo" />
+                <div class="overlay overlay--blur">IEEE</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="marvel.html">
+                <img
+                  id="img"
+                  src="./assets/marvel.png"
+                  alt="marvel club logo"
+                />
+                <div class="overlay overlay--blur">Marvel</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="gdsc.html">
-              <img id="img" src="./assets/gdsc.jpg" alt="gdsc club logo" />
-              <div class="overlay overlay--blur">GDSC</div>
-            </a>
+      <div class="row3">
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="praveg.html">
+                <img
+                  id="img"
+                  src="./assets/praveg.jpg"
+                  alt="praveg club logo"
+                />
+                <div class="overlay overlay--blur">Praveg</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="tedx.html">
+                <img id="img" src="./assets/tedx.jpg" alt="tedx club logo" />
+                <div class="overlay overlay--blur">TEDx</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contain">
+            <div class="clublogo">
+              <a href="180dc.html">
+                <img id="img" src="./assets/180dc.jpg" alt="180dc club logo" />
+                <div class="overlay overlay--blur">180DC</div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="ieee.html">
-              <img id="img" src="./assets/ieee.jpg" alt="ieee club logo" />
-              <div class="overlay overlay--blur">IEEE</div>
-            </a>
-          </div>
+    </main>
+    <div class="footer">
+      <div class="inner-footer">
+        <!--  for company name and description -->
+        <div class="footer-items">
+          <h1>Campus Club Hub</h1>
+          <p>Your one stop destination for all club activities.</p>
         </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="marvel.html">
-              <img id="img" src="./assets/marvel.png" alt="marvel club logo" />
-              <div class="overlay overlay--blur">Marvel</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row3">
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="praveg.html">
-              <img id="img" src="./assets/praveg.jpg" alt="praveg club logo" />
-              <div class="overlay overlay--blur">Praveg</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="tedx.html">
-              <img id="img" src="./assets/tedx.jpg" alt="tedx club logo" />
-              <div class="overlay overlay--blur">TEDx</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="contain">
-          <div class="clublogo">
-            <a href="180dc.html">
-              <img id="img" src="./assets/180dc.jpg" alt="180dc club logo" />
-              <div class="overlay overlay--blur">180DC</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </main>
-  <div class="footer">
-    <div class="inner-footer">
-  
-  <!--  for company name and description -->
-      <div class="footer-items">
-        <h1>Campus Club hub</h1>
-        <p>Your one stop destination for all club activities.</p>
-      </div>
-  
-  <!--  for quick links  -->
-      <div class="footer-items">
-        <h3>Quick Links</h3>
-        <div class="border1"></div> <!--for the underline -->
+
+        <!--  for quick links  -->
+        <div class="footer-items">
+          <h3>Quick Links</h3>
+          <div class="border1"></div>
+          <!--for the underline -->
           <ul>
             <a href="#titlecard"><li>Home</li></a>
             <a href="./myProfile.html"><li>My Profile</li></a>
             <a href="./login.html" id="loginlogin"><li>Login</li></a>
             <span id="loginlogin1"></span>
             <a href="./signup.html" id="signupsignup"><li>Signup</li></a>
-            <a href="./clubLogin.html" id="clubloginclublogin"><li>Club Login</li></a>
+            <a href="./clubLogin.html" id="clubloginclublogin"
+              ><li>Club Login</li></a
+            >
           </ul>
-      </div>
-  <!--  for contact us info -->
-      <div class="footer-items">
-        <h3>Contact us</h3>
-        <div class="border1"></div>
+        </div>
+        <!--  for contact us info -->
+        <div class="footer-items">
+          <h3>Contact us</h3>
+          <div class="border1"></div>
           <ul>
-            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Made by Mythili, Sunil and Shriya.</li>
-            <li><i class="fa fa-envelope" aria-hidden="true"></i>Suggestions or any Queries?</li>
-            <li><i class="fa fa-envelope" aria-hidden="true"></i><img id="mailIcon" src="./assets/envelope.png" alt="mail"> : campusclubhub@gmail.com</li>
-          </ul> 
+           
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"></i>Suggestions or
+              any Queries?
+            </li>
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              ><img id="mailIcon" src="./assets/envelope.png" alt="mail" /> :
+              campusclubhub@gmail.com
+            </li>
+          </ul>
+        </div>
       </div>
+      <div class="footer-bottom">Copyright &copy; Campus Club Hub 2023.</div>
     </div>
-    <div class="footer-bottom">
-      Copyright &copy; Campus Club Hub 2023.
-    </div>
-  </div>
-</body>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Wait for the content to load
-    setTimeout(function () {
-      // Hide the preloader
-      document.getElementById("preloader").classList.add("hide");
-    }, 2000); // 2000 milliseconds (2 seconds)
+    <script>
+      const button = document.getElementById("popup-calender");
+      const overlay = document.getElementById("overlay");
+      const popup = document.getElementById("popup");
 
-    const announcementsSwitch = document.querySelector('#announcements');
-    var x = false;
-    announcementsSwitch.addEventListener('click', function() {
-      if (x == false) {
-        openNav();
-        x = true;
-      } else {
-        closeNav();
-        x = false;
+      button.addEventListener("click", function () {
+        overlay.style.display = "block";
+        popup.style.display = "block";
+      });
+
+      overlay.addEventListener("click", function () {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+      });
+    </script>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Wait for the content to load
+      setTimeout(function () {
+        // Hide the preloader
+        document.getElementById("preloader").classList.add("hide");
+      }, 2000); // 2000 milliseconds (2 seconds)
+
+      const announcementsSwitch = document.querySelector("#announcements");
+      var x = false;
+      announcementsSwitch.addEventListener("click", function () {
+        if (x == false) {
+          openNav();
+          x = true;
+        } else {
+          closeNav();
+          x = false;
+        }
+      });
+      function openNav() {
+        document.getElementById("myNav").style.width = "100vw";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0vw";
       }
     });
-    function openNav() {
-      document.getElementById("myNav").style.width = "100vw";
-    }
-
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0vw";
-    }
-  });
-</script>
-<script type="module" src="./firebaseIndex.js"></script>
+  </script>
+  <script type="module" src="./firebaseIndex.js"></script>
 </html>

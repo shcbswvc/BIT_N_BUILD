@@ -54,6 +54,25 @@
           <a href="https://whatsapp.com/channel/0029Va6DE2E8vd1LlkCjIi0G" target="_blank"> <img height="40px" width="auto" src="./assets/whatsapp.png" alt="whatsapp logo"></a>
         </div>
       </div> 
+      <div id="calender">
+        <button id="popup-calender"><img
+          id="calender img"
+          src="./assets/calender.png"
+          alt="calender logo"
+        /></button>
+        <div id="overlay"></div>
+        <div id="popup">
+          <iframe
+            id="popup-iframe"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKolkata&bgcolor=%23e29c9c&showTitle=0&showPrint=0&src=Y2FtcHVzY2x1Ymh1YkBnbWFpbC5jb20&src=ZTQyNDk2NWZiY2YxZDRiOGRmNWZhMjVhMDQyNmU2ZGJiMTY5NTIxMDExYzE0MGRlM2U3ZmNmOTExZWNmM2IyY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23F09300"
+            style="border-width: 0"
+            width="890"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div> 
       <div id="popup1" class="overlay">
         <div class="popup">
           <h2>Oops!</h2>
@@ -63,6 +82,21 @@
           </div>
         </div>
       </div>
+      <script>
+        const button = document.getElementById("popup-calender");
+const overlay = document.getElementById("overlay");
+const popup = document.getElementById("popup");
+
+button.addEventListener("click", function () {
+  overlay.style.display = "block";
+  popup.style.display = "block";
+});
+
+overlay.addEventListener("click", function () {
+  overlay.style.display = "none";
+  popup.style.display = "none";
+});
+      </script>
 </body>
 <script type="module" src="./firebasePages.js"></script>
 <script type="module" src="./announcements.js"></script>

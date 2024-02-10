@@ -29,6 +29,22 @@ nav{
     height: 125px;
     width: 100%;
    }
+   #popup-calender{
+    background-color: transparent;
+    border: none;
+}
+#calender{position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    margin: 4vw;
+    z-index: 99; 
+    cursor: pointer;
+
+}
+#calender img{
+    height: auto;
+    width: 70px;
+}
 #logo{
     display: flex;
     height: 75px;

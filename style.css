@@ -3,15 +3,62 @@
     margin: 0px;
     box-sizing: border-box;
    
+       
+    
     }
+
+   
 ::-webkit-scrollbar {
     display: none;
 }
 body{
     background-color: #ddf4e4;
     padding-top: 70px;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
    
 }
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 90vh;
+    background-color: white;
+    z-index: 1;
+  }
+
+  #popup-iframe {
+    width: 100%;
+    height: 100%;
+  }
+.frame-container {
+    position: relative;
+  }
+  .iframe-button {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  /* Only show the button when the parent is hovered: */
+  
+  .frame-container:hover .iframe-button {
+    display: initial;
+  }
 #preloader {
     position: fixed;
     top: 0;
@@ -238,7 +285,22 @@ nav{
 .title{
     text-decoration: none;
 }
+#popup-calender{
+    background-color: transparent;
+    border: none;
+}
+#calender{position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    margin: 4vw;
+    z-index: 1000; 
+    cursor: pointer;
 
+}
+#calender img{
+    height: auto;
+    width: 70px;
+}
 #announcements{
     position: fixed; 
     bottom: 0; 

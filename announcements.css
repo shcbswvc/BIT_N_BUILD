@@ -1,3 +1,19 @@
+#popup-calender{
+    background-color: transparent;
+    border: none;
+}
+#calender{position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    margin: 4vw;
+    z-index: 99; 
+    cursor: pointer;
+
+}
+#calender img{
+    height: auto;
+    width: 70px;
+}
 #announcements{
     position: fixed; 
     bottom: 0; 
