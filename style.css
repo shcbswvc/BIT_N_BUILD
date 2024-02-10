@@ -156,14 +156,33 @@ nav{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem rgba(0 0 0 0.25);
-    
+	animation: scroll 50s linear infinite;
 }
+
 .slider img{
     flex: 1 0 100%;
     height: 475px;
     width: 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+            
+
+  @keyframes scroll {
+     0%, 100% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-100);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-300%);
+            }
 }
 .slidernav{
     display: flex;
