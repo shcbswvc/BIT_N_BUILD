@@ -3,11 +3,28 @@
   padding: 0rem 0.4rem;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #87c8e4, #34718a, #2bc8d3, #42c59a);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 
 p {
   color: rgb(113, 113, 113);
 }
-
+}
 form {
   display: flex;
   flex-direction: column;
@@ -15,12 +32,13 @@ form {
   justify-content: center;
   padding: 2rem 1rem;
   border-radius: 10px;
-  background-color: #e7e7e7;
+  background-color: #f0b8ba;
   border: 2px solid rgb(191, 191, 191);
   max-width: 500px;
   width: 100%;
   gap: 0.5rem;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 form > input,
