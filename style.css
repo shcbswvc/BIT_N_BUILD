@@ -12,10 +12,10 @@
     display: none;
 }
 body{
-    background-color: #ddf4e4;
+    background-color: #010101;
     padding-top: 70px;
     background-size: 40px 40px;
-    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: radial-gradient(circle, #2CD 1px, rgba(0, 0, 0, 0) 1px);
    
 }
 #overlay {
@@ -214,7 +214,7 @@ nav{
     align-items: center;
     opacity: 0;
     transition: opacity 0.25s;
-    border-radius: 10px;  
+    border-radius: 10px;
     outline: none; 
 } 
 .overlay--blur{
@@ -253,6 +253,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+   
 }
 .titlecard{
     
@@ -268,7 +269,7 @@ nav{
     height: 185px;
     width:185px;
     border-radius: 15%;
-    background-color: #bef282;
+    background-color: rgb(165, 187, 189);
     display: flex;
     justify-content:center;
     margin: 2px;
@@ -292,12 +293,14 @@ nav{
     background-color: transparent;
     border: none;
 }
-#calender{position: fixed; 
+#calender{
+    position: fixed; 
     bottom: 0; 
     left: 0; 
     margin: 4vw;
     z-index: 1000; 
     cursor: pointer;
+
 
 }
 #calender img{
@@ -411,7 +414,7 @@ span.message_author {
     color: var(--theme);
     margin-left: 20px;
 }
-/* FOOTER */
+
 .footer {
 	width: 100%;
 	background: #00121b;

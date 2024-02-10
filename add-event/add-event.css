@@ -116,3 +116,7 @@ form button {
 .error {
   color: red;
 }
+
+.alert-message {
+  font-size: 1.5rem;
+}
