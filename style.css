@@ -293,7 +293,7 @@ nav{
     bottom: 0; 
     left: 0; 
     margin: 4vw;
-    z-index: 600000; 
+    z-index: 99; 
     cursor: pointer;
 
 }
