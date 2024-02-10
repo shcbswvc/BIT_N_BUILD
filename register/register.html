@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="alert flex gap-2 hidden" id="alert">
+      <p id="alert-message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, rem
+        atque. Aperiam!
+      </p>
+    </div>
+
+    <h1 class="text-center mt-10">Register for an event!</h1>
+    <p class="text-center mt-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est
+      magnam velit!
+    </p>
+
+    <section class="flex justify-center">
+      <div class="container">
+        <div class="mt-10" id="event-info-container"></div>
+
+        <div class="flex justify-center">
+          <form>
+            <!-- Registration form -->
+            <label for="person-name">Name</label>
+            <input type="text" id="person-name" name="person-name" required />
+            <label for="person-uucms-id">Registration id</label>
+            <input
+              type="text"
+              id="person-uucms-id"
+              name="person-uucms-id"
+              required
+            />
+            <label for="person-year">Academic year</label>
+            <input
+              type="number"
+              id="person-year"
+              name="person-year"
+              max="5"
+              required
+            />
+            <select name="branch" id="branch" required>
+              <option value="" disabled selected>Select a branch</option>
+              <option value="CSE">CSE</option>
+              <option value="ISE">ISE</option>
+              <option value="AIML">AIML</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="Mech">Mech</option>
+              <option value="Civil">Civil</option>
+            </select>
+            <textarea
+              name="event-feedback"
+              id="event-feedback"
+              cols="30"
+              rows="10"
+              placeholder="Event Query/Feedback"
+              required
+            ></textarea>
+
+            <div class="form__footer">
+              <button type="submit">Register</button>
+              <a href="../events/events.html">Back to Events</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./register.js" type="module"></script>
+  </body>
+</html>

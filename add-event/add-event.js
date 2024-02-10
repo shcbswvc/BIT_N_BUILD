@@ -76,6 +76,9 @@ function addEventToFirebase(event) {
       // Enable the form submit button after API call is complete
       submitButton.disabled = false;
     });
+
+  // Reset the form
+  event.target.reset();
 }
 
 // Attach the form submission handler to the form
