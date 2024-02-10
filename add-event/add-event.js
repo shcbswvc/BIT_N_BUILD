@@ -9,10 +9,15 @@ import {
   onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/10.5.1/firebase-auth.js";
 
-const auth = getAuth().currentUser;
-if (!auth) {
-  location.href = "/login.html";
-}
+const auth = getAuth();
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    console.log(uid);
+  } else {
+    location.href = "../login/login.html";
+  }
+});
 
 function closeAlert() {
   const alertElement = document.getElementById("alert");
