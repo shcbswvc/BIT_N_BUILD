@@ -93,6 +93,7 @@ header{
     margin: 5px;
     background-color: azure;
     border-bottom: 1px solid black;
+    
 }
 .password img{
     height: 25px;
@@ -100,6 +101,15 @@ header{
     padding-right: 10px;
     cursor: pointer;
 }
+#passwordID{
+    background: transparent;
+    border: none;
+}
+#confirmpasswordID{
+    background: transparent;
+    border: none;
+}
+
 
 .signin{
     display: flex;
