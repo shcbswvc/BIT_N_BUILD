@@ -124,6 +124,7 @@ onValue(dbRef, (snapshot) => {
       text: childData.summary,
       date: childData.EventDate,
       author: childData.AnnouncementBy,
+      domain: childData.domain,
     };
 
     messages.push(announcement);
@@ -150,7 +151,7 @@ function createMessageElement(message) {
 
   const authorSpan = document.createElement('span');
   authorSpan.classList.add('message_author');
-  authorSpan.textContent = 'Announcement from '+message.author;
+  authorSpan.textContent = 'Announcement from '+message.author+' and the domain is '+message.domain+'.';
 
   li.appendChild(p);
   li.appendChild(dateSpan);
@@ -173,6 +174,26 @@ messageList.addEventListener('click', function (event) {
         window.location = gotoLink;
     }
 });
+const submitSearch = document.getElementById('submitSearch');
+submitSearch.addEventListener('click', function searchUser() {
+    var domainSelected = document.getElementById('selUser').value;
+    if (domainSelected && domainSelected !== "0") {
+      var filteredAnnouncements = messages.filter(function (announcement) {
+        return announcement.domain === domainSelected;
+      });
+      messageList.innerHTML = "";
+      filteredAnnouncements.forEach(function (filteredAnnouncement) {
+        const messageElement = createMessageElement(filteredAnnouncement);
+        messageList.appendChild(messageElement);
+      });
+    } else {
+      messageList.innerHTML = "";
+      messages.forEach(function (message) {
+        const messageElement = createMessageElement(message);
+        messageList.appendChild(messageElement);
+      });
+    }
+});
+  
 
-
-
+  

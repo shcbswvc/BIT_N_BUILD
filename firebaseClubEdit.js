@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
         }
     });
+    
     const announcementSubmitButton = document.querySelector('#submitButton');
     announcementSubmitButton.addEventListener('click', async (e) => {
         e.preventDefault();
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const url = document.getElementById('url').value;
         const announcement = document.getElementById('inputtext').value;
         const summary = document.getElementById('summary').value;
+        const selectElement = document.getElementById('domain-names').value;
         const announcementsRef = ref(database, 'Announcements');
 
         // Format the eventDate to DD/MM/YYYY
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
             EventDate: formattedEventDate,
             url: url,
             announcement: announcement,
+            domain: selectElement,
             summary : summary,
             timeAdded: dt.toISOString()
         }).then(() => {

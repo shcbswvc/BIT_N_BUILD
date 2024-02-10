@@ -60,7 +60,26 @@
       <div id="myNav" class="overlay1">
         <div class="overlay-content1">
           <div class="message_box">
-            <div class="message_box_label">Announcements</div>
+            <div class="message_box_label">
+              <div class="idk" style="display: flex; flex-direction: column;">
+                <h1>Announcements</h1>
+                <div>
+                  <div class="byUser">
+                    <span class="title">Domain : </span>
+                    <select id="selUser">
+                      <option value=0>All</option>
+                      <option value="Technical">Tech</option> 
+                      <option value="Culture">Culture</option> 
+                      <option value="Consulting">Consulting</option> 
+                      <option value="Racing">Racing</option>
+                      <option value="Art">Art</option> 
+                      <option value="Music and Dance">Music and Dance</option>
+                    </select>
+                    <button type="button" id="submitSearch" >Search </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="message_list_container">
               <ul class="message_list" id="announcementsList"></ul>
             </div>
@@ -412,6 +431,7 @@
         document.getElementById("myNav").style.width = "0vw";
       }
     });
+    
   </script>
-  <script type="module" src="./firebaseIndex.js"></script>
+  <script type="module" src="./firebaseIndex.js"></script>  
 </html>

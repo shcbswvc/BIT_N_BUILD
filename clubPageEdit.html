@@ -34,6 +34,15 @@
                 <input type="date" id="inputDate" name="eventDate" required pattern="\d{4}-\d{2}-\d{2}" title="Please enter a valid date in the format YYYY-MM-DD">
                 <input type="text" placeholder="Announcement summary" name="Any URL?" id="summary">
                 <input type="url" placeholder="Any URL?" name="Any URL?" id="url">
+                <label for="domain-names">Choose a domain:</label> 
+                <select name="domain-names" id="domain-names"> 
+                    <option value="Technical">Tech</option> 
+                    <option value="Culture">Culture</option> 
+                    <option value="Consulting">Consulting</option> 
+                    <option value="Racing">Racing</option>
+                    <option value="Art">Art</option> 
+                    <option value="Music and Dance">Music and Dance</option>
+                </select>
             </div>
             <textarea name="Announcement" placeholder="Announcement" id="inputtext" cols="30" rows="10"></textarea>
             <input type="submit" value="Submit" id="submitButton" style="width: 80px;">
