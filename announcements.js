@@ -26,6 +26,7 @@ onValue(dbRef, (snapshot) => {
             text: childData.summary,
             date: childData.EventDate,
             author: childData.AnnouncementBy,
+            announcementText: childData.announcement
         };
 
         messages.push(announcement);
@@ -61,6 +62,7 @@ function createMessageElement(message) {
     const p = document.createElement('p');
     p.classList.add('message_full_text');
     p.textContent = message.text;
+    p.style.color = "#FF8C00";
 
     const dateSpan = document.createElement('span');
     dateSpan.classList.add('message_date');
@@ -68,7 +70,8 @@ function createMessageElement(message) {
 
     const authorSpan = document.createElement('span');
     authorSpan.classList.add('message_author');
-    authorSpan.textContent = 'Announcement from ' + message.author;
+    authorSpan.textContent = message.announcementText;
+    authorSpan.style.color = "#A0A0A0";
 
     li.appendChild(p);
     li.appendChild(dateSpan);
