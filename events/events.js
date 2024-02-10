@@ -76,7 +76,7 @@ async function getEventsFromFirestore() {
 
     const registerButton = document.createElement("button");
     registerButton.classList.add("register__btn");
-    registerButton.innerHTML = `<a href="register/${doc.id}">Register</a>`;
+    registerButton.innerHTML = `<a href="../register/register.html?id=${doc.id}">Register</a>`;
 
     // Append elements to event card
     imageWrapper.appendChild(eventImage);
