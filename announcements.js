@@ -18,7 +18,11 @@ const database = getDatabase(app);
 const dbRef = ref(database, 'Announcements');
 let messages = [];
 
+// ... (previous code)
+
 onValue(dbRef, (snapshot) => {
+    messages = []; // Clear existing messages before updating with new data
+
     snapshot.forEach((childSnapshot) => {
         const childData = childSnapshot.val();
 
@@ -26,14 +30,26 @@ onValue(dbRef, (snapshot) => {
             text: childData.summary,
             date: childData.EventDate,
             author: childData.AnnouncementBy,
-            announcementText: childData.announcement
+            announcementText: childData.announcement,
+            eventName: childData.eventName
         };
 
         messages.push(announcement);
     });
 
     displayAnnouncementsOnCurrentPage();
+    updateRegisterButtonText(); // Call the function to update registerButton text
 });
+
+function updateRegisterButtonText() {
+    const mostRecentEvent = messages.length > 0 ? messages[0].eventName : 'No Events';
+
+    // Assuming registerButton is a button element
+    registerButton.textContent = 'Register'+mostRecentEvent;
+}
+
+// ... (rest of your code)
+
 
 function displayAnnouncementsOnCurrentPage() {
   const currentPageName = window.location.pathname.split('/').pop().split('.')[0];
@@ -100,4 +116,5 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0vw";
 }
+const registerButton = document.getElementById('back');
 

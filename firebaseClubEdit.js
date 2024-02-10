@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const announcementSubmitButton = document.querySelector('#submitButton');
     announcementSubmitButton.addEventListener('click', async (e) => {
         e.preventDefault();
-
+        const eventName = document.getElementById('eventName').value;
         const rawEventDate = document.getElementById('inputDate').value;
         const url = document.getElementById('url').value;
         const announcement = document.getElementById('inputtext').value;
@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         set(newAnnouncementRef, {
             AnnouncementBy: clubNameElement.textContent,
+            eventName: eventName,
             EventDate: formattedEventDate,
             url: url,
             announcement: announcement,
