@@ -38,7 +38,11 @@ function displayAnnouncementsOnCurrentPage() {
   const currentPageName = window.location.pathname.split('/').pop().split('.')[0];
   console.log('Current Page:', currentPageName);
 
-  const filteredMessages = messages.filter(message => message.author.toLowerCase() === currentPageName);
+  const filteredMessages = messages.filter(message => {
+    console.log('Checking Message Author:', message.author.trim().toLowerCase());
+    return message.author.trim().toLowerCase() === currentPageName;
+  });
+
   console.log('Filtered Messages:', filteredMessages);
 
   const messageList = document.querySelector('.message_list');
