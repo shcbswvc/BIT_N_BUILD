@@ -10,7 +10,30 @@ body{
   background-image: radial-gradient(circle, #2CD 1px, rgba(0, 0, 0, 0) 1px);
  
 }
-
+nav{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  right: 0;
+  left:0;
+ }
+.navbar{
+  background-color: #9adff4;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 3px #bbd0e2;
+  padding: 10px 30px;
+  height: 125px;
+  width: 100%;
+ }
+#logo{
+  display: flex;
+  height: 75px;
+  width: auto;
+  cursor: pointer;  
+  outline: none;  
+}
 p {
   color: rgb(113, 113, 113);
 }
@@ -27,7 +50,7 @@ form {
   max-width: 500px;
   width: 100%;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 form > input,
