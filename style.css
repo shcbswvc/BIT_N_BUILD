@@ -12,10 +12,10 @@
     display: none;
 }
 body{
-    background-color: #ddf4e4;
+    background-color: #010101;
     padding-top: 70px;
     background-size: 40px 40px;
-    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: radial-gradient(circle, #2CD 1px, rgba(0, 0, 0, 0) 1px);
    
 }
 #overlay {
@@ -91,7 +91,7 @@ nav{
     height: auto;
    }
 .navbar{
-    background-color: #9adff4;
+    background-color: #2CD;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -249,7 +249,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+   
 }
 .titlecard{
     
@@ -257,15 +257,15 @@ nav{
     justify-content: center;
     align-items: center;
     height: 4em;
-    background-color: #f40058;
+    background-color: #2b2c2e;
     margin: 80px;
     margin-bottom: 50px;
     }
 .contain{
     height: 185px;
     width:185px;
-    border-radius: 15%;
-    background-color: #bef282;
+   
+    background-color: rgb(165, 187, 189);
     display: flex;
     justify-content:center;
     margin: 2px;
