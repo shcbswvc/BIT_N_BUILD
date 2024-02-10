@@ -3,6 +3,13 @@
   padding: 0rem 0.4rem;
   box-sizing: border-box;
 }
+body{
+  background-color: #010101;
+  padding-top: 70px;
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, #2CD 1px, rgba(0, 0, 0, 0) 1px);
+ 
+}
 
 p {
   color: rgb(113, 113, 113);

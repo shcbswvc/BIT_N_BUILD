@@ -46,7 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 username: username,
                 email: email,
                 last_login: dt,
-                last_logout: dt
+                last_logout: dt,
+                attendance:0
             }).then(() => {
                 if(email=='campusclubhub@gmail.com'){
                     window.location = 'campusClubHub.html'

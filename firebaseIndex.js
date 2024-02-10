@@ -151,7 +151,7 @@ function createMessageElement(message) {
 
   const authorSpan = document.createElement('span');
   authorSpan.classList.add('message_author');
-  authorSpan.textContent = 'Announcement from '+message.author+' and the domain is '+message.domain+'.';
+  authorSpan.textContent = 'Announcement domain is '+message.domain+' and the it is by '+message.author;
 
   li.appendChild(p);
   li.appendChild(dateSpan);
