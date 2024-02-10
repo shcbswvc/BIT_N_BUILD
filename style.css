@@ -91,7 +91,7 @@ nav{
     height: auto;
    }
 .navbar{
-    background-color: #2CD;
+    background-color: #9adff4;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -214,7 +214,7 @@ nav{
     align-items: center;
     opacity: 0;
     transition: opacity 0.25s;
-    border-radius: none; 
+    border-radius: 10px;
     outline: none; 
 } 
 .overlay--blur{
@@ -252,6 +252,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
    
 }
 .titlecard{
@@ -260,14 +261,14 @@ nav{
     justify-content: center;
     align-items: center;
     height: 4em;
-    background-color: #2b2c2e;
+    background-color: #f40058;
     margin: 80px;
     margin-bottom: 50px;
     }
 .contain{
     height: 185px;
     width:185px;
-   
+    border-radius: 15%;
     background-color: rgb(165, 187, 189);
     display: flex;
     justify-content:center;
@@ -292,12 +293,14 @@ nav{
     background-color: transparent;
     border: none;
 }
-#calender{position: fixed; 
+#calender{
+    position: fixed; 
     bottom: 0; 
     left: 0; 
     margin: 4vw;
     z-index: 1000; 
     cursor: pointer;
+
 
 }
 #calender img{
