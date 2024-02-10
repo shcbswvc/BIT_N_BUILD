@@ -214,7 +214,7 @@ nav{
     align-items: center;
     opacity: 0;
     transition: opacity 0.25s;
-    border-radius: 10px;  
+     
     outline: none; 
 } 
 .overlay--blur{
