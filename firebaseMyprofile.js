@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const email = document.getElementById('emailProfile');
     const userName = document.getElementById('userName');
     const userName1 = document.getElementById('userName1');
+    const attendance= document.getElementById('attendance');
     onAuthStateChanged(auth, (user) => {
         if (user) {
             const userId = user.uid;
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 email.textContent = userData.email;
                 userName.textContent = userData.username;
                 userName1.textContent = userData.username;
+                attendance.textContent=userData.attendance;
             });
         } else {
         }
@@ -68,7 +70,7 @@ changePasswordButton.addEventListener('click', async (e) => {
     const user = auth.currentUser;
     const newPassword = document.getElementById('passwordID').value;
     const confirmPassword = document.getElementById('confirmpasswordID').value;
-
+    const attendance = document.getElementById('attendance').value;
     if (newPassword !== confirmPassword) {
         document.getElementById('passwordMatchError').textContent = 'Passwords do not match';
         return;
