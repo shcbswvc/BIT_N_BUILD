@@ -22,7 +22,7 @@ onAuthStateChanged(auth, (user) => {
     username = user.displayName;
     userDetails = user;
   } else {
-    location.href = "../../login.html";
+    location.href = "../login.html";
   }
 });
 
