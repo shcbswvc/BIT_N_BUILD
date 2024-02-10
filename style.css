@@ -156,7 +156,7 @@ nav{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem rgba(0 0 0 0.25);
-	animation: scroll 50s linear infinite;
+	
 }
 
 .slider img{
@@ -166,6 +166,7 @@ nav{
     scroll-snap-align: start;
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
+	animation: scroll 50s linear infinite;
 }
 
             
