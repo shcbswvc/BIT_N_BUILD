@@ -45,6 +45,10 @@ function showAlert(message, isError = false) {
 function addEventToFirebase(event) {
   event.preventDefault();
 
+  // Disable the form submit button
+  const submitButton = document.querySelector('.form button[type="submit"]');
+  submitButton.disabled = true;
+
   const formData = new FormData(event.target);
 
   const docData = {
@@ -62,11 +66,15 @@ function addEventToFirebase(event) {
   addDoc(eventsCollectionRef, docData)
     .then((docRef) => {
       console.log("Document written with ID: ", docRef.id);
-      showAlert("Event added successfully!");
+      showAlert("Event added successfully! 🎉");
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
       showAlert("Error adding event. Please try again.", true);
+    })
+    .finally(() => {
+      // Enable the form submit button after API call is complete
+      submitButton.disabled = false;
     });
 }
 
