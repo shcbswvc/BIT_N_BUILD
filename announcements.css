@@ -1,0 +1,107 @@
+#announcements{
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    margin: 4vw;
+    z-index: 99; 
+    cursor: pointer;
+}
+#announcements img{
+    height: auto;
+    width: 70px;
+}
+.overlay1 { 
+    height: 100vh;
+    width: 0vw;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    margin: auto;
+    backdrop-filter: blur(30px);
+    overflow-x: hidden; 
+    transition: 0.5s;
+  }
+  
+.overlay-content1 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+:root {
+    --theme: darkorange;
+}
+
+.message_box {
+    background-color: white;
+    width: 80vw;
+    height: 60vh;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.message_box_label {
+    background-color: var(--theme);
+    padding: 13px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.message_list_container {
+    padding: 15px;
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul.message_list {
+    border-left: 2px dotted #DBDBDB;
+    padding: 0px 10px;
+}
+
+li.message_content {
+    color: #a0a0a0;
+    font-size: 20px;
+    list-style-type: none;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 1.7em;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    cursor: pointer;
+}
+
+li.message_content::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid #cacaca;
+    position: absolute;
+    left: -16px;
+    top: 3px;
+    transition: 0.5s;
+}
+
+li.message_content:hover::before {
+    background-color: var(--theme);
+    border: 2px solid var(--theme);
+}
+
+span.message_date {
+    color: #bebebe;
+}
+
+span.message_author {
+    color: var(--theme);
+    margin-left: 20px;
+}

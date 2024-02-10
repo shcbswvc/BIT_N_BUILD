@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Page</title>
+    <link rel="stylesheet" href="./clubPageEdit.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./clubPages.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html" class="logo">
+                <img id="logo" src="./assets/logo.png" alt="Campus Club Hub logo" />
+              </a>
+        </div>
+        <div class="webname">
+            <img src="./assets/campus.png" id="campus" alt="campus">
+            <img src="./assets/club.png" id="club" alt="club">
+            <img src="./assets/hub.png" id="hub" alt="hub">
+          </div>
+        <div id="back">
+            <a href="./index.html"><button id="back">Back</button></a>
+        </div>
+    </header>
+    <div id="content">
+        <h1>Hello,<span id="clubNameElement">ClubName</span> Social media Lead!</h1>
+    <div id="container1">
+        <h2>Do you want to add any Announcements?</h2>
+        <div class="inputContainer1">
+            <div>
+                <span style="font-weight: 700;">Date of event/Deadline:</span>
+                <input type="date" id="inputDate" name="eventDate" required pattern="\d{4}-\d{2}-\d{2}" title="Please enter a valid date in the format YYYY-MM-DD">
+                <input type="text" placeholder="Announcement summary" name="Any URL?" id="summary">
+                <input type="url" placeholder="Any URL?" name="Any URL?" id="url">
+            </div>
+            <textarea name="Announcement" placeholder="Announcement" id="inputtext" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit" id="submitButton" style="width: 80px;">
+        </div>
+    </div>
+    </div>
+    <footer>
+        <h1 id="footer">CAMPUS CLUB HUB</h1>
+    </footer>
+</body>
+<script type="module" src="./firebaseClubEdit.js"></script>
+</html>

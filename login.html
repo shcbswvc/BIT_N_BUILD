@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./clubPages.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html" class="logo">
+                <img id="logo" src="./assets/logo.png" alt="Campus Club Hub logo" />
+              </a>
+        </div>
+        <div class="webname">
+            <img src="./assets/campus.png" id="campus" alt="campus">
+            <img src="./assets/club.png" id="club" alt="club">
+            <img src="./assets/hub.png" id="hub" alt="hub">
+          </div>
+        <div id="back">
+            <a href="./index.html"><button id="back">Back</button></a>
+        </div>
+    </header>
+    <div id="loginContainer">
+        <div class="heading">
+            <h1>Sign in</h1>
+        </div>
+        <div class="details">
+            <input id="emailID" type="text" placeholder="Email" name="email" required>  
+            <div class="password">
+              <input id="passwordID" type="password" name="password" placeholder="Password" required>
+              <img id="visibilityID" src="assets/invisible.png" alt="invisible" onclick="showPassword()">
+            </div>
+            <p id="error" style="color: red; display: flex; justify-content: center; align-items: center;"></p>
+        </div>
+        <div class="questions">
+          <p class="reset" id="reset" style="color: blue; text-decoration: underline; cursor: pointer; font-size: 15px;">Forgot password?</p>
+          <p style="font-size: 15px;">Club Social Media Lead? <a href="./clubLogin.html">Club Login</a></p>
+          <p style="font-size: 15px;">New User? <a href="./signup.html">Sign Up</a></p>
+        </div>
+        
+        <div class="signin">
+            <button class="signInButton">Sign In</button>
+            <h3>or</h3>
+            <div class="google">
+                <button class="signInButton signInWithGoogleButton"><img src="./assets/google.png" alt="google">Sign In with Google</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1 id="footer">CAMPUS CLUB HUB</h1>
+    </footer>
+</body>
+<script> 
+  function showPassword() {
+  var x = document.getElementById("passwordID");
+  var visibilityIcon = document.getElementById("visibilityID");
+
+  if (x.type === "password") {
+    x.type = "text";
+    visibilityIcon.src = 'assets/visible.png';
+  } else {
+    x.type = "password";
+    visibilityIcon.src = 'assets/invisible.png';
+  }
+}
+</script>
+<script type="module" src="./firebaseLogin.js"></script>
+</html>

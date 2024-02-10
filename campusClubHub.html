@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./clubPages.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html" class="logo">
+                <img id="logo" src="./assets/logo.png" alt="Campus Club Hub logo" />
+              </a>
+        </div>
+        <div class="webname">
+            <img src="./assets/campus.png" id="campus" alt="campus">
+            <img src="./assets/club.png" id="club" alt="club">
+            <img src="./assets/hub.png" id="hub" alt="hub">
+          </div>
+        <div id="back">
+            <a href="./login.html"><button id="back">Back</button></a>
+        </div>
+    </header>
+    <div id="loginContainer">
+            <h1>Create Club Account</h1>
+        <div class="details">
+            <input type="text" placeholder="Username" id="usernameID" required>
+            <input type="text" placeholder="Email" id="emailID" required>
+            <div class="password">
+                <input id="passwordID" type="password" name="password" placeholder="Password" required>
+                <img id="visibilityID1" src="assets/invisible.png" alt="invisible" onclick="showPassword('passwordID', 'visibilityID1')">
+            </div>
+            <div class="password">
+                <input id="confirmpasswordID" type="password" name="password" placeholder="Confirm Password" required>
+                <img id="visibilityID2" src="assets/invisible.png" alt="invisible" onclick="showPassword('confirmpasswordID', 'visibilityID2')">
+            </div>
+            <p id="passwordMatchError" style="color: red; display: flex; justify-content: center; align-items: center;"></p>
+        </div>
+        <div class="signin">
+            <button class="signUpButton">Sign Up</button>
+        </div>
+    </div>
+    <footer>
+        <h1 id="footer">CAMPUS CLUB HUB</h1>
+    </footer>
+</body>
+<script>
+    function showPassword(inputID, visibilityIconID) {
+        var x = document.getElementById(inputID);
+        var visibilityIcon = document.getElementById(visibilityIconID);
+
+        if (x.type === "password") {
+            x.type = "text";
+            visibilityIcon.src = 'assets/visible.png';
+        } else {
+            x.type = "password";
+            visibilityIcon.src = 'assets/invisible.png';
+        }
+    }
+</script>
+<script type="module" src="./firebaseCampusClubHub.js"></script>
+</html>

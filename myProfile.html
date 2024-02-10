@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./clubPages.css">
+</head>
+<body style="background: #ddf4e4;">
+    <header>
+        <div id="logo">
+            <a href="index.html" class="logo">
+                <img id="logo" src="./assets/logo.png" alt="Campus Club Hub logo" />
+              </a>
+        </div>
+        <div class="webname">
+            <img src="./assets/campus.png" id="campus" alt="campus">
+            <img src="./assets/club.png" id="club" alt="club">
+            <img src="./assets/hub.png" id="hub" alt="hub">
+          </div>
+        <div id="back">
+          <button id="logout">Log Out</button>
+        </div>
+    </header>
+    <div id="information" style="width: 350px; margin: auto; border: 2px solid black; padding: 20px; border-radius: 10px;">
+      <h1> Hello, <span id="userName"></span>!</h1>
+      <div id="information1">
+        <h2>User data:</h2>
+        <h3>Email : <span id="emailProfile"></span></h3>
+        <h3>Username : <span id="userName1"></span></h3>
+      </div>
+    </div>
+    <div id="changePassword" style="width: 350px; margin: auto; border: 2px solid red; padding: 20px; border-radius: 10px;">
+      <h2>Change your Password:</h2>
+      <div class="password">
+        <input id="passwordID" type="password" name="password" placeholder="Password" required>
+        <img id="visibilityID1" src="assets/invisible.png" alt="invisible" onclick="showPassword('passwordID', 'visibilityID1')">
+    </div>
+    <div class="password">
+        <input id="confirmpasswordID" type="password" name="password" placeholder="Confirm Password" required>
+        <img id="visibilityID2" src="assets/invisible.png" alt="invisible" onclick="showPassword('confirmpasswordID', 'visibilityID2')">
+    </div>
+    <p id="passwordMatchError" style="color: red; display: flex; justify-content: center; align-items: center;"></p>
+    <p id="passwordChanged" style="color: green; display: flex; justify-content: center; align-items: center;"></p>
+    <div class="signin">
+      <button class="signUpButton" style="border: 2px solid black;">Change Password</button>
+  </div>
+    </div>
+    <footer>
+        <h1 id="footer">CAMPUS CLUB HUB</h1>
+    </footer>
+</body>
+<script> 
+  function showPassword(inputID, visibilityIconID) {
+        var x = document.getElementById(inputID);
+        var visibilityIcon = document.getElementById(visibilityIconID);
+
+        if (x.type === "password") {
+            x.type = "text";
+            visibilityIcon.src = 'assets/visible.png';
+        } else {
+            x.type = "password";
+            visibilityIcon.src = 'assets/invisible.png';
+        }
+    }
+</script>
+<script type="module" src="./firebaseMyprofile.js"></script>
+</html>
