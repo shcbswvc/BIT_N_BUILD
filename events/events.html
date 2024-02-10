@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="./event.css" />
   </head>
   <body>
-    <h1>Events</h1>
+    <h1 class="text-center mt-10">Events</h1>
+    <p class="text-center mt-4">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ea
+      suscipit vel?
+    </p>
+    <div class="flex justify-center">
+      <select name="club" id="club" required>
+        <option value="All" selected>All</option>
+        <option value="GDSC">GDSC</option>
+        <option value="IEEE">IEEE</option>
+      </select>
+    </div>
+
+    <section class="flex justify-center">
+      <div class="container" id="events-container"></div>
+    </section>
+
+    <script src="./events.js" type="module"></script>
   </body>
 </html>
